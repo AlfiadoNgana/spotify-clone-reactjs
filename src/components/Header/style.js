@@ -23,6 +23,7 @@ export const Search = styled.div`
     font-size: 13px;
     color: #121212;
     border: 0;
+    width: 50px;
   }
 `;
 
@@ -35,6 +36,6 @@ export const User = styled.div`
     width: 27px;
     height: 27px;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-right: 10px;
   }
 `;
