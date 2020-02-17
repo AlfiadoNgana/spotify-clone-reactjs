@@ -1,14 +1,13 @@
 import React from 'react';
 
 import { GlobalStyle } from './styles/global';
+import SideBar from './components/SideBar';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <div>
-        <h1>Hello world</h1>
-      </div>
+      <SideBar />
     </>
   );
 }
