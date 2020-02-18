@@ -7,7 +7,7 @@ const Browse = () => (
     <Title>Navegar</Title>
 
     <List>
-      <PlayList>
+      <PlayList to="/playlists/1">
         <img
           src="https://dopemusicpromotions.com/wp-content/uploads/2019/06/Stargroves-album-cover.png"
           alt="playList"
@@ -18,7 +18,7 @@ const Browse = () => (
           mundial
         </p>
       </PlayList>
-      <PlayList>
+      <PlayList to="/playlists/1">
         <img
           src="https://dopemusicpromotions.com/wp-content/uploads/2019/06/Stargroves-album-cover.png"
           alt="playList"
@@ -29,7 +29,7 @@ const Browse = () => (
           mundial
         </p>
       </PlayList>
-      <PlayList>
+      <PlayList to="/playlists/1">
         <img
           src="https://dopemusicpromotions.com/wp-content/uploads/2019/06/Stargroves-album-cover.png"
           alt="playList"
@@ -40,7 +40,7 @@ const Browse = () => (
           mundial
         </p>
       </PlayList>
-      <PlayList>
+      <PlayList to="/playlists/1">
         <img
           src="https://dopemusicpromotions.com/wp-content/uploads/2019/06/Stargroves-album-cover.png"
           alt="playList"
