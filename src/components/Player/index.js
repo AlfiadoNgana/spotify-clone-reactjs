@@ -30,14 +30,18 @@ const Player = ({ player }) => (
     )}
 
     <Current>
-      <img
-        src="https://dopemusicpromotions.com/wp-content/uploads/2019/06/Stargroves-album-cover.png"
-        alt="Musica Currente"
-      />
-      <div>
-        <span>Times like theses</span>
-        <small>Foo Fighters</small>
-      </div>
+      {!!player.currentSong && (
+        <>
+          <img
+            src={player.currentSong.thumbnail}
+            alt={player.currentSong.title}
+          />
+          <div>
+            <span>{player.currentSong.title}</span>
+            <small>{player.currentSong.author}</small>
+          </div>
+        </>
+      )}
     </Current>
 
     <Progress>
@@ -90,6 +94,9 @@ Player.propTypes = {
   player: PropTypes.shape({
     currentSong: PropTypes.shape({
       file: PropTypes.string,
+      thumbnail: PropTypes.string,
+      title: PropTypes.string,
+      author: PropTypes.string,
     }),
     status: PropTypes.string,
   }).isRequired,
