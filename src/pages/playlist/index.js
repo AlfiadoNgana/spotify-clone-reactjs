@@ -55,13 +55,15 @@ class PlayList extends Component {
 
         <SongList cellPadding={0} cellSpacing={0}>
           <thead>
-            <th />
-            <th>Titulo</th>
-            <th>Artista</th>
-            <th>Album</th>
-            <th>
-              <img src={ClockIcon} alt="Duracao" />
-            </th>
+            <tr>
+              <th />
+              <th>Titulo</th>
+              <th>Artista</th>
+              <th>Album</th>
+              <th>
+                <img src={ClockIcon} alt="Duracao" />
+              </th>
+            </tr>
           </thead>
 
           <tbody>
@@ -91,7 +93,7 @@ class PlayList extends Component {
   render() {
     const { playlistsDetails } = this.props;
     return playlistsDetails.loading ? (
-      <Container loading>
+      <Container loading="true">
         <Loading />
       </Container>
     ) : (
@@ -103,9 +105,9 @@ class PlayList extends Component {
 PlayList.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
-      id: PropTypes.number,
+      id: PropTypes.string,
     }),
-  }),
+  }).isRequired,
   getPlaylistsDetailsRequest: PropTypes.func.isRequired,
   playlistsDetails: PropTypes.shape({
     data: PropTypes.shape({

@@ -8,6 +8,7 @@ import { GlobalStyle } from './styles/global';
 import SideBar from './components/SideBar';
 import Player from './components/Player';
 import Header from './components/Header';
+import ErrorBox from './components/ErrorBox';
 
 import { Wrapper, Container, Content } from './styles/components';
 
@@ -24,6 +25,7 @@ function App() {
           <Container>
             <SideBar />
             <Content>
+              <ErrorBox />
               <Header />
               <Routes />
             </Content>
